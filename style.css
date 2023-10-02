@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  place-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+.overall-container {
+  height: 350px;
+  width: 895px;
+  display: flex;
+}
+
+.left {
+  padding: 25px 45px;
+  background-color: hsl(244, 38%, 16%);
+  /* width: 410.7px; */
+  display: grid;
+}
+
+.right {
+  background-image: url(../images/image-header-desktop.jpg);
+  width: 1200px;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: overlay;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  /* padding: 0;
+  margin: 0; */
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  padding: 0;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.botcover {
+  display: flex;
+}
+
+.bot {
+  display: grid;
+  float: left;
+  width: 115px;
+  padding: 10px;
+
+  /* margin-right: 20px; */
+}
+
+.bot h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.bot p {
+  font-size: 13px;
+}
+
+.right img {
+  height: 350px;
+}
+.bottom {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    place-content: center;
+    align-items: center;
+    display: block;
+  }
+
+  .left {
+    display: none;
+    width: 100%;
+  }
+
+  .right {
+    background-image: url(../images/image-header-mobile.jpg);
+    width: 100%;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: overlay;
+    display: flex;
+    height: 450px;
+    background-size: cover;
+  }
+
+  .overall-container {
+    display: block;
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .bottom {
+    display: block;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .bottom {
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    /* height: 70vh; */
+    padding: 25px 45px;
+  }
+
+  .bottom p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    font-size: 15px;
+    /* text-align: unset; */
+  }
+
+  .botcover2 {
+    display: block;
+    margin-top: 35px;
+  }
+
+  .bot2 {
+    margin-bottom: 15px;
+  }
+
+  .bot2 h3 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2px;
+  }
+
+  .bot2 p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+  }
+}
